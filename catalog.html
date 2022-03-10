@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="catalog__top center">
+        <header class="header">
+            <a href="./index.html" title="На главную" aria-label="Ссылка на главную страницу"><img class="header__logo"
+                    src="./img/logo.svg" alt="logo"></a>
+            <input class="header__input" type="text" placeholder="Поиск">
+            <nav class="navbar" role="navigation">
+                <ul class="navbar__items">
+                    <li>
+                        <a class="navbar__link underline__hover" href="./catalog.html"
+                            title="Перейти в каталог">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="navbar__link underline__hover" href="./cart.html" title="Открыть корзину">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar-mob" role="navigation">
+                <ul class="navbar__items">
+                    <li>
+                        <a class="navbar__link underline__hover" href="№" title="Поиск" aria-label="Поиск"><img
+                                src="./img/icon/search.svg" alt="Поиск"></a>
+                    </li>
+                    <li>
+                        <a class="navbar__link underline__hover" href="./catalog.html" title="Перейти в каталог"
+                            aria-label="Перейти в каталог"><img src="./img/icon/catalog.svg" alt="Каталог"></a>
+                    </li>
+                    <li>
+                        <a class="navbar__link underline__hover" href="./cart.html" title="Открыть корзину"
+                            aria-label="Открыть корзину"><img src="./img/icon/cart.svg" alt="Корзина"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="top__content">
+            <h1 class="title">Каталог</h1>
+        </section>
+    </div>
+    <div class="catalog center">
+        <section class="products">
+            <div class="catalog__menu">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__items">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="./index.html" title="На главную">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="catalog.html" title="Перейти в каталог">Каталог
+                                товаров</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="select">
+                    <select name="sort" id="filter">
+                        <option value="new">Порядок: сперва новые</option>
+                        <option value="old">Порядок: сперва старые</option>
+                        <option value="hight__cost">Цена: сперва дороже</option>
+                        <option value="low__cost">Цена: сперва дешевле</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products__container">
+                <div class="product__item">
+                    <img class="product_img" src="img/products/c__bed__tatran.jpg" alt="Кровать TATRAN">
+                    <a class="product__link" href="#" title="Кровать TATRAN">
+                        <h3 class="product__heading black">Кровать TATRAN</h3>
+                    </a>
+                    <p class="product__description">Основание из полированной нержавеющей стали, придает оригинальный
+                        парящий эффект.</p>
+                    <p class="price">120 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/chair__vilora.jpg" alt="Кресло VILORA">
+                    <a class="product__link" href="#" title="Кресло VILORA">
+                        <h3 class="product__heading black">Кресло VILORA</h3>
+                    </a>
+                    <p class="product__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
+                        приятная на ощупь ткань.</p>
+                    <p class="price">21 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/c__table__menu.jpg" alt="Стол MENU">
+                    <a class="product__link" href="#" title="Стол MENU">
+                        <h3 class="product__heading black">Стол MENU</h3>
+                    </a>
+                    <p class="product__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                    <p class="price">34 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/sofa__askesta.jpg" alt="Диван ASKESTA">
+                    <a class="product__link" href="#" title="Диван ASKESTA">
+                        <h3 class="product__heading black">Диван ASKESTA</h3>
+                    </a>
+                    <p class="product__description">Благодаря защелкивающемуся механизму диван легко раскладывается в
+                        комфортную кровать</p>
+                    <p class="price">68 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/chair__lunar.jpg" alt="Кресло LUNAR">
+                    <a class="product__link" href="#" title="Кресло LUNAR">
+                        <h3 class="product__heading black">Кресло LUNAR</h3>
+                    </a>
+                    <p class="product__description">Прекрасно переносит солнечные лучи, перепады влажности и любые
+                        осадки.</p>
+                    <p class="price">40 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/cabinet__nastan.jpg" alt="Шкаф Nastan">
+                    <a class="product__link" href="#" title="Шкаф Nastan">
+                        <h3 class="product__heading black">Шкаф Nastan</h3>
+                    </a>
+                    <p class="product__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+                    <p class="price">80 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/c__bed__tatran.jpg" alt="Кровать TATRAN">
+                    <a class="product__link" href="#" title="Кровать TATRAN">
+                        <h3 class="product__heading black">Кровать TATRAN</h3>
+                    </a>
+                    <p class="product__description">Основание из полированной нержавеющей стали, придает оригинальный
+                        парящий эффект.</p>
+                    <p class="price">120 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/chair__vilora.jpg" alt="Кресло VILORA">
+                    <a class="product__link" href="#" title="Кресло VILORA">
+                        <h3 class="product__heading black">Кресло VILORA</h3>
+                    </a>
+                    <p class="product__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
+                        приятная на ощупь ткань.</p>
+                    <p class="price">21 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/c__table__menu.jpg" alt="Стол MENU">
+                    <a class="product__link" href="#" title="Стол MENU">
+                        <h3 class="product__heading black">Стол MENU</h3>
+                    </a>
+                    <p class="product__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                    <p class="price">34 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/sofa__askesta.jpg" alt="Диван ASKESTA">
+                    <a class="product__link" href="#" title="Диван ASKESTA">
+                        <h3 class="product__heading black">Диван ASKESTA</h3>
+                    </a>
+                    <p class="product__description">Благодаря защелкивающемуся механизму диван легко раскладывается в
+                        комфортную кровать</p>
+                    <p class="price">68 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/chair__lunar.jpg" alt="Кресло LUNAR">
+                    <a class="product__link" href="#" title="Кресло LUNAR">
+                        <h3 class="product__heading black">Кресло LUNAR</h3>
+                    </a>
+                    <p class="product__description">Прекрасно переносит солнечные лучи, перепады влажности и любые
+                        осадки.</p>
+                    <p class="price">40 000 руб.</p>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/cabinet__nastan.jpg" alt="Шкаф Nastan">
+                    <a class="product__link" href="#" title="Шкаф Nastan">
+                        <h3 class="product__heading black">Шкаф Nastan</h3>
+                    </a>
+                    <p class="product__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+                    <p class="price">80 000 руб.</p>
+                </div>
+            </div>
+        </section>
+        <a class="products__link" href="catalog.html">Показать ещё</a>
+    </div>
+    <footer class="footer center">
+        <a class="footer__logo" href="./index.html" title="На главную" aria-label="Ссылка на главную страницу"><img
+                class="invert" src="./img/logo.svg" alt="logo"></a>
+        <nav class="footer__menu">
+            <h4 class="footer__heading black">Меню</h4>
+            <ul>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="./index.html"
+                        title="Перейти на главную страницу">Главная</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="./catalog.html" title="Перейти в каталог">Каталог</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="./cart.html" title="Открыть корзину">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="footer__contacts">
+            <h4 class="footer__heading black">Контакты</h4>
+            <ul>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="tel:+79088008080">+7 908 800 80 80</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="mailto:help@interier.com">help@interier.com</a>
+                </li>
+            </ul>
+            <ul class="social__links">
+                <li>
+                    <a class="social__links__item" href="#" aria-label="Ссылка на instagram">
+                        <img src="img/social/inst.svg" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a class="social__links__item" href="#" aria-label="Ссылка на twitter">
+                        <img src="img/social/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a class="social__links__item" href="#" aria-label="Ссылка на facebook">
+                        <img src="img/social/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <form class="footer__form" action="#">
+            <p class="footer__form__text black">Получайте наши новости и обновления</p>
+            <div class="email">
+                <input class="email__input" type="email" placeholder="Email">
+                <button type="submit" class="email__btn black">Подписаться</button>
+            </div>
+        </form>
+    </footer>
+</body>
+
+</html>

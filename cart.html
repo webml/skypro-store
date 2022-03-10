@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top__cart center">
+        <header class="header">
+            <a href="./index.html" title="На главную" aria-label="Ссылка на главную страницу"><img class="header__logo"
+                    src="./img/logo.svg" alt="logo"></a>
+            <input class="header__input" type="text" placeholder="Поиск">
+            <nav class="navbar" role="navigation">
+                <ul class="navbar__items">
+                    <li>
+                        <a class="navbar__link underline__hover" href="./catalog.html"
+                            title="Перейти в каталог">Каталог</a>
+                    </li>
+                    <li>
+                        <a class="navbar__link underline__hover" href="./cart.html" title="Открыть корзину">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar-mob" role="navigation">
+                <ul class="navbar__items">
+                    <li>
+                        <a class="navbar__link underline__hover" href="№" title="Поиск" aria-label="Поиск"><img
+                                src="./img/icon/search.svg" alt="Поиск"></a>
+                    </li>
+                    <li>
+                        <a class="navbar__link underline__hover" href="./catalog.html" title="Перейти в каталог"
+                            aria-label="Перейти в каталог"><img src="./img/icon/catalog.svg" alt="Каталог"></a>
+                    </li>
+                    <li>
+                        <a class="navbar__link underline__hover" href="./cart.html" title="Открыть корзину"
+                            aria-label="Открыть корзину"><img src="./img/icon/cart.svg" alt="Корзина"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="top__content">
+            <h1 class="title">Корзина</h1>
+        </section>
+    </div>
+    <div class="shop__inform center">
+        <div class="cart">
+            <div class="cart__label">
+                <p class="cart__label__text">Товар</p>
+                <p class="cart__label__text">К-во</p>
+            </div>
+            <div class="cart__items">
+                <div class="cart__item">
+                    <div class="cart__item__content">
+                        <img src="./img/products/cart__table__menu.jpg" alt="Стол MENU" class="cart__item_img">
+                        <div class="cart__item__info">
+                            <a href="#" title="Стол MENU" class="cart__item__heading">
+                                <h3>Стол MENU</h3>
+                            </a>
+                            <p class="cart__item__description">Для того чтобы трапезничать было приятно, необходим
+                                правильный обеденный стол.</p>
+                            <p class="cart__item__price">34 000 руб.</p>
+                            <nav>
+                                <ul class="cart__item__menu">
+                                    <li><a href="#" class="cart__item__link">Избранные</a></li>
+                                    <li><a href="#" class="cart__item__link">Удалить</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <input type="number" value="1" id="first__item" class="cart__item__count">
+                </div>
+                <div class="cart__item">
+                    <div class="cart__item__content">
+                        <img src="./img/products/cart__sofa__nastan.jpg" alt="Диван NASTAN" class="cart__item_img">
+                        <div class="cart__item__info">
+                            <a href="#" title="Диван NASTAN" class="cart__item__heading">
+                                <h3>Диван NASTAN</h3>
+                            </a>
+                            <p class="cart__item__description">Модель отличается простотой линий и форм, отсутствием
+                                броского декора. </p>
+                            <p class="cart__item__price">80 000 руб.</p>
+                            <nav>
+                                <ul class="cart__item__menu">
+                                    <li><a href="#" class="cart__item__link">Избранные</a></li>
+                                    <li><a href="#" class="cart__item__link">Удалить</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <input type="number" value="1" id="second__item" class="cart__item__count">
+                </div>
+            </div>
+            <div class="cart__buttons">
+                <div class="cart__button clear">Очистить корзину</div>
+                <div class="cart__button continue">Продолжить покупки</div>
+            </div>
+        </div>
+        <div class="order">
+            <h2 class="order__heading">Оформление заказа</h2>
+            <input class="order__input" type="text" id="order__client" placeholder="Имя Фамилия">
+            <input class="order__input" type="tel" id="order__tel" placeholder="+ 7 904 000 80 80">
+            <input class="order__input" type="text" id="order__adress" placeholder="Адрес доставки">
+            <div class="order__cost">
+                <p>Итого:</p><span>128 000</span>
+                <p>руб.</p>
+            </div>
+            <button class="order__button" type="submit">Оформить заказ</button>
+        </div>
+    </div>
+    <div class="special center">
+        <section class="products">
+            <h2 class="products__title">Специальные предложения</h2>
+            <div class="products__container">
+                <div class="product__item">
+                    <img class="product_img" src="img/products/chandelier__voda.jpg" alt="Люстра VODA">
+                    <a class="product__link" href="#" title="Люстра VODA">
+                        <h3 class="product__heading">Люстра VODA</h3>
+                    </a>
+                    <p class="product__description">Основание из полированной нержавеющей стали, придает оригинальный
+                        парящий эффект.</p>
+                    <div class="price__box">
+                        <p class="price">45 000 руб.</p>
+                        <p class="price price__old">67 000 руб.</p>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/sofa__ronald.jpg" alt="Диван RONALD">
+                    <a class="product__link" href="#" title="Диван RONALD">
+                        <h3 class="product__heading">Диван RONALD</h3>
+                    </a>
+                    <p class="product__description">Модель отличается простотой линий и форм, отсутствием броского
+                        декора.</p>
+                    <div class="price__box">
+                        <p class="price">156 000 руб.</p>
+                        <p class="price price__old">198 000 руб.</p>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img class="product_img" src="img/products/dresser__vent.jpg" alt="Комод VENT">
+                    <a class="product__link" href="#" title="Комод VENT">
+                        <h3 class="product__heading">Комод VENT</h3>
+                    </a>
+                    <p class="product__description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                    <div class="price__box">
+                        <p class="price">34 000 руб.</p>
+                        <p class="price price__old">45 000 руб.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <a class="products__link" href="catalog.html" title="Перейти в каталог">Перейти в каталог</a>
+    </div>
+    <footer class="footer center">
+        <a class="footer__logo" href="./index.html" title="На главную" aria-label="Ссылка на главную страницу"><img
+                class="invert" src="./img/logo.svg" alt="logo"></a>
+        <nav class="footer__menu">
+            <h4 class="footer__heading black">Меню</h4>
+            <ul>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="./index.html"
+                        title="Перейти на главную страницу">Главная</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="./catalog.html" title="Перейти в каталог">Каталог</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="./cart.html" title="Открыть корзину">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="footer__contacts">
+            <h4 class="footer__heading black">Контакты</h4>
+            <ul>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="tel:+79088008080">+7 908 800 80 80</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__link underline__hover" href="mailto:help@interier.com">help@interier.com</a>
+                </li>
+            </ul>
+            <ul class="social__links">
+                <li>
+                    <a class="social__links__item" href="#" aria-label="Ссылка на instagram">
+                        <img src="img/social/inst.svg" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a class="social__links__item" href="#" aria-label="Ссылка на twitter">
+                        <img src="img/social/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a class="social__links__item" href="#" aria-label="Ссылка на facebook">
+                        <img src="img/social/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <form class="footer__form" action="#">
+            <p class="footer__form__text black">Получайте наши новости и обновления</p>
+            <div class="email">
+                <input class="email__input" type="email" placeholder="Email">
+                <button type="submit" class="email__btn black">Подписаться</button>
+            </div>
+        </form>
+    </footer>
+</body>
+
+</html>
