@@ -374,7 +374,7 @@
   display: flex;
 }
 
-.breadcrumbs__item:not(:last-child)::after {
+.breadcrumbs__item:not(:last-child):after {
   content: "/";
   padding: 0 8px;
 }
@@ -514,7 +514,7 @@ body {
   color: #fff;
 }
 
-.underline__hover:hover {
+.underline__hover:hover, .breadcrumbs__link:hover {
   text-decoration: underline;
 }
 
@@ -676,6 +676,10 @@ body {
   line-height: 41px;
   text-transform: uppercase;
   color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .category__item:nth-of-type(1) {
@@ -696,6 +700,13 @@ body {
 
 .category__item:nth-of-type(5) {
   background-image: url("../img/category/bath.jpg");
+}
+
+.category__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 20px #c4c4c4;
+          box-shadow: 0 0 20px #c4c4c4;
 }
 
 .category__container {
@@ -728,7 +739,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 56px 32px;
+  gap: 56px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -754,6 +765,18 @@ body {
 
 .product__item {
   width: 378px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px;
+}
+
+.product__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 20px #c4c4c4;
+          box-shadow: 0 0 20px #c4c4c4;
 }
 
 .product__img {
@@ -900,6 +923,7 @@ body {
   border-radius: 20px;
   width: 275px;
   height: 46px;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #000;
@@ -938,7 +962,7 @@ body {
   .product__item {
     width: calc((100% - 48px) / 2);
   }
-  .product_img {
+  .product__img {
     width: 100%;
   }
 }

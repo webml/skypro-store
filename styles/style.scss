@@ -198,6 +198,14 @@ body {
   &:nth-of-type(5) {
     background-image: url("../img/category/bath.jpg");
   }
+
+  transition: all 0.3s;
+  box-sizing: border-box;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #c4c4c4;
+  }
 }
 
 .category__container {
@@ -225,7 +233,7 @@ body {
 
   &__container {
     display: flex;
-    gap: 56px $gap;
+    gap: 56px 0;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -249,6 +257,14 @@ body {
 .product {
   &__item {
     width: 378px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    padding: 16px;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #c4c4c4;
+    }
   }
 
   &__img {
@@ -359,6 +375,7 @@ body {
     border-radius: 20px;
     width: 275px;
     height: 46px;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: $blackText;
@@ -401,7 +418,7 @@ body {
     width: calc((100% - 48px) / 2);
   }
 
-  .product_img {
+  .product__img {
     width: 100%;
   }
 }
